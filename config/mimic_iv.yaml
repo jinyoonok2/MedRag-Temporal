@@ -1,0 +1,35 @@
+paths:
+  base_dir: ./datasets/mimic_iv
+  filtered_csv_dir: ./datasets/mimic_iv/csv_filtered
+
+gcp:
+  project: mimic-cxr-analysis
+  location: US
+
+tables:
+  hosp:
+    - patients
+    - admissions
+    - diagnoses_icd
+    - labevents
+    - d_labitems
+    - transfers
+    - procedures_icd
+    - microbiologyevents
+    - pharmacy
+    - prescriptions
+    - emar
+    - emar_detail
+  icu:
+    - icustays
+    - d_items
+    - inputevents
+    - procedureevents
+    - outputevents
+    - ingredientevents
+
+filter:
+  subjects_csv: ./datasets/mimic_cxr/downloads/dataset_processed_merged.csv  # MUST have 'subject_id'
+
+# Optional
+chunk_size: 250000

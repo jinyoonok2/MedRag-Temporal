@@ -1,0 +1,4 @@
+# Evaluation
+top_eval: 5
+model_name: "emilyalsentzer/Bio_ClinicalBERT"
+eval_output_dir: "eval_out/bertscore"

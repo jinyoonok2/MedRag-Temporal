@@ -1,0 +1,16 @@
+pretrained: "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"
+context_length: 256
+batch_size: 32
+num_workers: 8
+learning_rate: 5e-5
+weight_decay: 1e-4
+epochs: 20
+
+vision_freeze: False
+text_freeze: False
+vision_proj_freeze: False
+text_proj_freeze: False
+
+weights_dir: "weights/mimic/clip"
+last_pt: "weights/mimic/clip/last.pt"
+best_pt: "weights/mimic/clip/best.pt"

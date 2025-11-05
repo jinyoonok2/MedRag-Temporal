@@ -1,0 +1,16 @@
+# Speed knobs
+FAST_POSTINGS_ONLY: true
+FILTER_ANCHOR_BY_DF: true
+DF_MIN: 5
+DF_MAX: 3000
+DEG_MAX_REL: 2000
+DEG_MAX_COOC: 2000
+
+# Retrieval settings
+K: 100
+M: 15
+k_rel_per_anchor_dir: 50
+k_cooc_per_anchor: 50
+pool_cap: 1200
+topN: 20
+weights: [0.7, 0.2, 0.1]

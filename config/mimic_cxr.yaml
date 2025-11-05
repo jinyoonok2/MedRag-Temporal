@@ -1,0 +1,25 @@
+dataset:
+  data_name: "mimic"
+  dataset_split: [0.5, 0.4, 0.1]
+  train_split: 1.0
+  num_classes: 14
+  download_path: "./datasets/mimic_cxr/downloads"
+  merged_csv_path: "./datasets/mimic_cxr/downloads/dataset_processed_merged.csv"
+
+graphrag:
+  image_collection_name: "image_embeddings"
+  text_collection_name: "text_embeddings"
+  chroma_dir: "./graphrag/mimic_cxr/chroma_mimic"
+  local_graph_dir: "./graphrag/mimic_cxr/local"
+  global_graph_dir: "./graphrag/mimic_cxr/global"
+  postings_dir: "./graphrag/mimic_cxr/postings"
+
+gcs_path:
+  gcs_bucket: "gs://mimic-cxr-2.0.0.physionet.org"
+  study_csv: "gs://mimic-cxr-2.0.0.physionet.org/cxr-study-list.csv.gz"
+  record_csv: "gs://mimic-cxr-2.0.0.physionet.org/cxr-record-list.csv.gz"
+
+  gcs_jpg_bucket: "gs://mimic-cxr-jpg-2.0.0.physionet.org"
+  gcs_jpg_metadata: "gs://mimic-cxr-jpg-2.0.0.physionet.org/mimic-cxr-2.0.0-metadata.csv.gz"
+  gcs_jpg_label: "gs://mimic-cxr-jpg-2.0.0.physionet.org/mimic-cxr-2.0.0-chexpert.csv.gz"
+
